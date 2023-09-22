@@ -21,8 +21,8 @@ The dataset used for this project contains a comprehensive collection of car lis
 **Installation:**
 To get started with this project on your local machine, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/car-price-prediction.git`
-2. Navigate to the project directory: `cd car-price-prediction`
+1. Clone the repository: `git clone https://github.com/ashishyadav2/ML-Mini-Project.git`
+2. Navigate to the project directory: `cd ML-Mini-Project`
 3. Set up a virtual environment (optional but recommended): `python -m venv venv`
 4. Activate the virtual environment:
    - On Windows: `venv\Scripts\activate`
