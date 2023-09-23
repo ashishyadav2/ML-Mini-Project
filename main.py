@@ -28,7 +28,6 @@ transmission = st.selectbox('Transmission Type',df['Transmission'].unique())
 ownership = st.selectbox('Ownership Type',df['Owner'].unique())
 engine_size = st.number_input('Engine Size',step=50)
 length = st.number_input('Length in meters',step=0.5)*1000
-st.write(length)
 seat_capacity = st.number_input('Seating Capacity',step=1)
 fuel_capacity = st.number_input('Fuel Tank Capacity',step=5)
 
