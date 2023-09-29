@@ -26,7 +26,6 @@ km = st.number_input('Kilometers Driven',step=1000)
 fuel_type = st.selectbox('Fuel Type',df['Fuel Type'].unique())
 transmission = st.selectbox('Transmission Type',df['Transmission'].unique())
 location = st.selectbox('Location',sorted(df['Location'].unique()))
-color = st.selectbox('Color',sorted(df['Color'].unique()))
 ownership = st.selectbox('Ownership Type',df['Owner'].unique())
 engine_size = st.number_input('Engine Size',step=50)
 drive_train = st.selectbox('Location',sorted(df['Drivetrain'].unique()))
@@ -35,7 +34,7 @@ if st.button('Predict Price'):
     with st.spinner('Thinking'):
         time.sleep(5)
         
-    query = np.array([[company,car_model,year,km,fuel_type,transmission,location,color,ownership,engine_size,drive_train]])
+    query = np.array([[company,car_model,year,km,fuel_type,transmission,location,ownership,engine_size,drive_train]])
     prediction = model.predict(query)[0]
     lower_bound = prediction - (prediction*0.09)
     upper_bound = prediction + (prediction*0.09)
